@@ -2,12 +2,25 @@
 // numero. Il programma stampa la somma di tutti i numeri
 // inseriti.
 
-var insertNumber = prompt('Inserisci un numero')
+var array = [];
 
-for (var i = 0; i < insertNumber.length; i++) {
-  if (insertNumber.length < 5) {
-    insertNumbe
-  }
+var totale = 0;
+
+for (var i = 0; i < 5; i++) {
+
+//chiedere all'untente 5 volte un numero
+  var insertNumber = parseInt(prompt('Inserisci un numero'));
+
+    array.push(insertNumber);
+// sommare il totale che vale 0 all'i 
+    totale = totale + (array[i])
+
 }
 
-// insertNumber.push(insertNumber);
+console.log(totale);
+
+
+// for(var i = 0; i < array.length; i++) {
+//
+//   console.log(array[i]);
+// }
