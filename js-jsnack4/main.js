@@ -6,5 +6,9 @@ for (var i = 0; i < 6; i++) {
 
   var insertNumber = parseInt(prompt('Inserire un numero'))
 
-  array.push(insertNumber)
+  if (insertNumber % 2 != 0) {
+      array.push(insertNumber)
+  }
 }
+
+console.log('Ecco i numeri dispari: ' + array);
